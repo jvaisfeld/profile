@@ -1,0 +1,120 @@
+/** {
+  border: thin solid red;
+}*/
+
+body {
+  background-color: #EBEBEB;
+  color: rgb(46, 46, 46);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: lighter;
+  line-height: 1.5
+  ;
+}
+
+h1 {
+  color: rgb(142, 14, 14);
+  font-family: 'PT Sans', sans-serif;
+  font-size: 26px;
+  line-height: 1.5
+
+}
+
+h2 {
+  color: rgb(93, 91, 89);
+  font-family: 'PT Sans', sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+h3 {
+  color: rgb(134, 132, 130);
+  font-family: 'PT Sans', sans-serif;
+  font-size: 18px;
+  line-height: 1.5
+}
+
+a {
+  color: rgb(44, 45, 50);
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(142, 14, 14);
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 3px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 400px;
+  margin: 20px auto;
+}
+
+@media (max-width: 960px) {
+  .container {
+    width: 700px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 720px) {
+  .container {
+    width: 500px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+    margin: 0 auto;
+  }
+}
+
+.image-round {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  border: 3px solid rgba(0, 0, 0, 0.1);
+}
+
+.text-centered {
+  text-align: center;
+}
+
+.btn-red {
+  background: rgb(142, 14, 14);
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: white;
+}
+
+.btn-red:hover {
+  color: white;
+  background: rgb(93, 91, 89);
+  background: ;
+}
+
+.list-inline {
+  list-style: none;
+  padding-left: 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+.list-inline li {
+  display: inline-block;
+  padding: 10px;
+}
+
+table {
+  text-align: left;
+}
+
+table img {
+  width: 110px;
+}
