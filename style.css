@@ -1,120 +1,164 @@
-/** {
-  border: thin solid red;
-}*/
-
-body {
-  background-color: #EBEBEB;
-  color: rgb(46, 46, 46);
-  font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
-  font-weight: lighter;
-  line-height: 1.5
-  ;
+body,
+html {
+    width: 100%;
+    height: 100%;
 }
 
-h1 {
-  color: rgb(142, 14, 14);
-  font-family: 'PT Sans', sans-serif;
-  font-size: 26px;
-  line-height: 1.5
-
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
 }
 
-h2 {
-  color: rgb(93, 91, 89);
-  font-family: 'PT Sans', sans-serif;
-  font-size: 20px;
-  line-height: 1.5;
-  text-align: center;
+.topnav {
+    font-size: 14px;
 }
 
-h3 {
-  color: rgb(134, 132, 130);
-  font-family: 'PT Sans', sans-serif;
-  font-size: 18px;
-  line-height: 1.5
+.lead {
+    font-size: 18px;
+    font-weight: 400;
 }
 
-a {
-  color: rgb(44, 45, 50);
-  text-decoration: none;
+.intro-header {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    color: #f8f8f8;
+    background: url(http://leblogdecarlos.com/wp-content/uploads/2015/06/Laptop_Pingpong.jpg) no-repeat center center;
+    background-size: cover;
 }
 
-a:hover {
-  color: rgb(142, 14, 14);
+.intro-message {
+    position: relative;
+    padding-top: 20%;
+    padding-bottom: 20%;
 }
 
-.card {
-  background: white;
-  padding: 30px;
-  border-radius: 3px;
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  width: 400px;
-  margin: 20px auto;
+.intro-message > h1 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 5em;
 }
 
-@media (max-width: 960px) {
-  .container {
-    width: 700px;
-    margin: 0 auto;
-  }
-}
-@media (max-width: 720px) {
-  .container {
-    width: 500px;
-    margin: 0 auto;
-  }
-}
-@media (max-width: 540px) {
-  /* For a screen < 540px, this CSS will be read */
-  .container {
-    width: 300px;
-    margin: 0 auto;
-  }
+.intro-divider {
+    width: 400px;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
 }
 
-.image-round {
-  border-radius: 50%;
-  width: 120px;
-  height: 120px;
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-  border: 3px solid rgba(0, 0, 0, 0.1);
+.intro-message > h3 {
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
 }
 
-.text-centered {
-  text-align: center;
+@media(max-width:767px) {
+    .intro-message {
+        padding-bottom: 15%;
+    }
+
+    .intro-message > h1 {
+        font-size: 3em;
+    }
+
+    ul.intro-social-buttons > li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.intro-social-buttons > li:last-child {
+        margin-bottom: 0;
+    }
+
+    .intro-divider {
+        width: 100%;
+    }
 }
 
-.btn-red {
-  background: rgb(142, 14, 14);
-  padding: 10px 15px;
-  border-radius: 5px;
-  color: white;
+.network-name {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
 }
 
-.btn-red:hover {
-  color: white;
-  background: rgb(93, 91, 89);
-  background: ;
+.content-section-a {
+    padding: 50px 0;
+    background-color: #f8f8f8;
 }
 
-.list-inline {
-  list-style: none;
-  padding-left: 0;
-  text-align: center;
-  font-size: 14px;
+.content-section-b {
+    padding: 50px 0;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
 }
 
-.list-inline li {
-  display: inline-block;
-  padding: 10px;
+.section-heading {
+    margin-bottom: 30px;
 }
 
-table {
-  text-align: left;
+.section-heading-spacer {
+    float: left;
+    width: 200px;
+    border-top: 3px solid #e7e7e7;
 }
 
-table img {
-  width: 110px;
+.banner {
+    padding: 100px 0;
+    color: #f8f8f8;
+    background: url(https://cdn2.hubspot.net/hubfs/381192/blog/Webshop_kundeservice.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.banner h2 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 3em;
+}
+
+.banner ul {
+    margin-bottom: 0;
+}
+
+.banner-social-buttons {
+    float: right;
+    margin-top: 0;
+}
+
+@media(max-width:1199px) {
+    ul.banner-social-buttons {
+        float: left;
+        margin-top: 15px;
+    }
+}
+
+@media(max-width:767px) {
+    .banner h2 {
+        margin: 0;
+        text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+        font-size: 3em;
+    }
+
+    ul.banner-social-buttons > li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.banner-social-buttons > li:last-child {
+        margin-bottom: 0;
+    }
+}
+
+footer {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+}
+
+p.copyright {
+    margin: 15px 0 0;
 }
